@@ -1,0 +1,394 @@
+html, body {
+  width: 100%;
+  height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    z-index: 3;
+  }
+  .hidden {
+    display: none;
+  }
+  #game {
+    text-align: center;
+    position: sticky;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  #back {
+    border-color: transparent;
+    background-color: transparent;
+    position: absolute;
+    left: 0px;
+  }
+
+  #back:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    position: absolute;
+    left: 0px;
+  }
+  #play {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #play:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #options {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #options:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .slider {
+     -webkit-appearance: none;
+    appearance: none;
+    width: 145px;
+    height: 10px;
+    border: 0;
+    background: url("slider.png") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 24px;
+    border: 0;
+      border-radius: 50%;
+    background-image: url('sliderbutton.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+  #fullscreen {
+    border-color: transparent;
+    background-color: transparent;
+
+  }
+  #fullscreen:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #credits {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #credits:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #backward {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #backward:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #forward {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #forward:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #one {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #one:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #two {
+    border-color: transparent;
+    background-color: transparent;
+  }   
+  #two:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  } 
+  #three {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #three:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #four {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #four:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #five {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #five:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #six {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #six:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #shop {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #shop:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #onelocked {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #onelocked:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #twolocked {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #twolocked:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #threelocked {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #threelocked:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #fourlocked {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #fourlocked:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    
+  }
+  #fivelocked {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #fivelocked:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #sixlocked {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #sixlocked:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #coins {
+    position: absolute;
+    right: 60px;
+    top: 0px;
+    z-index: 100;
+  }
+
+  #coinsNumber {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 100;
+    color: #ffffff;
+    font: bold 20px sans-serif;
+  }
+  #Oxytank {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #Oxytank:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #Timestopper {
+    border-color: transparent;
+    background-color: transparent;
+  }   
+  #Timestopper:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #Speed {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #Speed:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #Carbonfibersuit {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #Carbonfibersuit:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #Numbingpill {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #Numbingpill:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+#Coinboost {
+    border-color: transparent;
+    background-color: transparent;
+  }
+#Coinboost:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+#Lungcapacity {
+    border-color: transparent;
+    background-color: transparent;
+  }
+#Lungcapacity:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #swimbutton {
+    border-color: transparent;
+    background-color: transparent;
+    bottom: 0px;
+    left: 0px;
+  } 
+  #swimbutton:hover {
+    opacity: 0.5;
+    border-color: transparent;
+    background-color: transparent;
+    bottom: 0px;
+    left: 0px;
+    cursor: pointer;  
+  }
+  #progress {
+    z-index: 4;
+    width: 530px;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  #oppprogress {
+    z-index: 4;
+    width: 530px;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  #head {
+ position: absolute;
+  }
+  #ghead {
+  position: absolute;
+  }
+  #dhead {
+    position: absolute;
+    } 
+  #dahead {
+    position: absolute;
+  }
+  #sharkhead {
+    position: absolute;
+  }
+  #temuhead {
+    position: absolute;
+  }
+  #ilhead {
+    position: absolute;
+  }
+/* .center {
+  z-index: 4;
+}
